@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="../scss/style.min.css">
+    <title>Kursnova</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="/" class="header__body-logo">
+                    <img src="../images/dist/logo.svg" alt="">
+                </a>
+                <div class="header__body-tabs">
+                    <a class="active" href="/parent.html">
+                        Родителям
+                    </a>
+                    <a href="/child.html">
+                        Ученикам
+                    </a>
+                </div>
+                <div class="header__body-action">
+                    <button class="header__body-action-sign auth-open">
+                        Войти
+                    </button>
+                    <button class="burger">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal">
+        <div class="modal_wrap">
+            <button class="modal-close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M25.0673 4.85347C25.6565 4.37337 26.5251 4.40799 27.0742 4.95699C27.6231 5.50602 27.6578 6.37472 27.1777 6.96383L27.0742 7.07808L18.1357 16.0156L27.0742 24.9541L27.1777 25.0683C27.6577 25.6575 27.6231 26.5262 27.0742 27.0752C26.5252 27.6241 25.6565 27.6587 25.0673 27.1787L24.9531 27.0752L16.0156 18.1367L7.07808 27.0752L6.96382 27.1787C6.37473 27.6587 5.50602 27.624 4.95698 27.0752C4.40799 26.5261 4.37337 25.6575 4.85347 25.0683L4.95698 24.9541L13.8945 16.0156L4.95698 7.07808L4.85347 6.96383C4.37336 6.37469 4.40801 5.50602 4.95698 4.95699C5.50601 4.40799 6.37468 4.37337 6.96382 4.85347L7.07808 4.95699L16.0156 13.8945L24.9531 4.95699L25.0673 4.85347Z"
+                        fill="#16161C" />
+                </svg>
+            </button>
+            <div class="modal__body">
+                <div class="modal__body-top">
+                    <div class="modal__body-top-auth">
+                        <div class="modal__body-top-auth-tabs">
+                            <a class="active" href="/parent.html">
+                                Родителям
+                            </a>
+                            <a href="/child.html">
+                                Ученикам
+                            </a>
+                        </div>
+                        <button class="modal__body-top-auth-sign">
+                            Войти
+                        </button>
+                    </div>
+                    <nav class="modal__body-top-menu">
+                        <ul>
+                            <li>
+                                <a href="">Как всё устроено</a>
+                            </li>
+                            <li>
+                                <a href="">Учителя</a>
+                            </li>
+                            <li>
+                                <a href="">Цены</a>
+                            </li>
+                            <li>
+                                <a href="">Частые вопросы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <svg class="arrow" width="193" height="187" viewBox="0 0 193 187" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M71.001 27.9995C147.999 23.4995 116.002 86.999 101.501 70.9995C87 55 127.441 45.5455 148 76.1652C159.18 92.8171 159 147.5 96.9839 163.948"
+                        stroke="white" stroke-width="2" />
+                    <path d="M108.336 165.658L96.1198 164.049L106.03 154.39" stroke="white" stroke-width="2" />
+                </svg>
+                <img src="../images/dist/modal-icon.webp" alt="">
+                <button class="modal__body-try">
+                    Попробовать kursnova за 0 ₽
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="auth">
+        <div class="auth__body">
+            <div class="auth__body-main">
+                <button class="auth-close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.31033 5.3103C5.67645 4.94422 6.25547 4.9216 6.64822 5.24194L6.72439 5.3103L16.0154 14.6013L25.3064 5.3103L25.3826 5.24194C25.7754 4.92161 26.3544 4.9442 26.7205 5.3103C27.0864 5.67642 27.1091 6.25548 26.7888 6.64819L26.7205 6.72436L17.4285 16.0154L26.7205 25.3074L26.7888 25.3835C27.1091 25.7763 27.0865 26.3554 26.7205 26.7214C26.3544 27.0875 25.7754 27.11 25.3826 26.7898L25.3064 26.7214L16.0154 17.4294L6.72439 26.7214L6.64822 26.7898C6.25552 27.1101 5.67649 27.0874 5.31033 26.7214C4.94422 26.3553 4.92157 25.7763 5.24197 25.3835L5.31033 25.3074L14.6013 16.0154L5.31033 6.72436L5.24197 6.64819C4.92162 6.25541 4.94422 5.67641 5.31033 5.3103Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <h3>
+                    Введи данные 
+                </h3>
+                <form action="" method="post" class="auth__body-main-form">
+                    <div class="inputs">
+                        <div class="inputs__input">
+                            <span>Имя</span>
+                            <input type="text">
+                        </div>
+                        <div class="inputs__input">
+                            <span>Телефон</span>
+                            <input type="tel">
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            Я родитель
+                            <input type="radio" class="modern-radio" value="Родитель" name="a">
+                            <span></span>
+                        </label>
+                        <label>
+                            Я ученик
+                            <input checked type="radio" class="modern-radio" value="Ученик" name="a">
+                            <span></span>
+                        </label>
+                    </div>
+                    <button type="button">
+                        Получить бесплатный доступ
+                    </button>
+                    <p>Нажимая на кнопку, вы соглашаетесь с <a href="">условиями</a> сбора и обработки данных</p>
+                </form>
+            </div>
+            <div class="auth__body-good">
+                <button class="auth-close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.31033 5.3103C5.67645 4.94422 6.25547 4.9216 6.64822 5.24194L6.72439 5.3103L16.0154 14.6013L25.3064 5.3103L25.3826 5.24194C25.7754 4.92161 26.3544 4.9442 26.7205 5.3103C27.0864 5.67642 27.1091 6.25548 26.7888 6.64819L26.7205 6.72436L17.4285 16.0154L26.7205 25.3074L26.7888 25.3835C27.1091 25.7763 27.0865 26.3554 26.7205 26.7214C26.3544 27.0875 25.7754 27.11 25.3826 26.7898L25.3064 26.7214L16.0154 17.4294L6.72439 26.7214L6.64822 26.7898C6.25552 27.1101 5.67649 27.0874 5.31033 26.7214C4.94422 26.3553 4.92157 25.7763 5.24197 25.3835L5.31033 25.3074L14.6013 16.0154L5.31033 6.72436L5.24197 6.64819C4.92162 6.25541 4.94422 5.67641 5.31033 5.3103Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <img src="../images/dist/modal-good.webp" alt="">
+                <div class="text">
+                    <h3>Cпасибо! Ссылка на бесплатный <br>доступ уже на почте</h3>
+                    <p>Если ничего не пришло, проверь папку «Спам»</p>
+                </div>
+                <button class="good-btn">
+                    Отлично, спасибо
+                </button>
+            </div>
+        </div>
+    </div>
+    <section class="parent">
+        <img src="../images/dist/parent.webp" alt="" class="parent__back">
+        <div class="parent__text">
+            <h1>
+                <span>Домашки</span>
+                <span>и контрольные </span>
+                <span>больше </span>
+                <span>не проблема</span>
+            </h1>
+            <div class="parent__text-tags">
+                С kursnova
+            </div>
+        </div>
+        <a href="" class="parent__scroll">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M6 9C6 7.4087 6.63214 5.88258 7.75736 4.75736C8.88258 3.63214 10.4087 3 12 3C13.5913 3 15.1174 3.63214 16.2426 4.75736C17.3679 5.88258 18 7.4087 18 9V15C18 16.5913 17.3679 18.1174 16.2426 19.2426C15.1174 20.3679 13.5913 21 12 21C10.4087 21 8.88258 20.3679 7.75736 19.2426C6.63214 18.1174 6 16.5913 6 15V9Z"
+                    stroke="white" stroke-width="2" stroke-linejoin="round" />
+                <path d="M12 7V11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Cкролль вниз
+        </a>
+    </section>
+    <section class="learning">
+        <div class="learning__text">
+            <p>Учись в любимом формате       нужен только    смартфон</p>
+            <img src="../images/dist/lyearning/1.png" alt="">
+            <img src="../images/dist/lyearning/2.png" alt="">
+            <img src="../images/dist/lyearning/3.png" alt="">
+            <img src="../images/dist/lyearning/4.png" alt="">
+        </div>
+        <button class="learning__try">
+            Попробовать за 0 ₽
+        </button>
+    </section>
+    <section class="watch">
+        <div class="watch__body">
+            <div class="watch__body-info">
+                <h2>Смотри</h2>
+                <div class="watch__body-info-wrap">
+                    <img src="../images/dist/watch-icon.webp" alt="">
+                    <span>ви</span>
+                    <span>део</span>
+                </div>
+                <div style="background: url(../images/dist/watch_back.webp) center no-repeat; background-size: 100% 100%;"
+                    class="watch__body-info-tags">
+                    <span>Школьная программа</span>
+                    <span>в формате тик-токов</span>
+                </div>
+                <button class="watch__body-info-primer">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.618164" y="4.24023" width="24" height="24" rx="12"
+                            transform="rotate(-8.3649 0.618164 4.24023)" fill="white" />
+                        <path
+                            d="M19.2927 12.4147C20.6467 13.0074 20.9122 14.8133 19.7862 15.7706L14.1921 20.5266C12.9953 21.544 11.1465 20.8479 10.9179 19.2938L9.7857 11.5935C9.55717 10.0394 11.1274 8.84052 12.5664 9.47043L19.2927 12.4147Z"
+                            fill="black" />
+                    </svg>
+                    Смотреть пример
+                </button>
+            </div>
+            <img src="../images/dist/watch.webp" alt="" class="watch__body-img">
+            <div class="watch__body-attr">
+                <div class="watch__body-attr-item">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.1628 9C26.9462 9 30.3667 11.6434 32.8209 15.9037C35.275 11.6434 38.6955 9 42.4789 9C49.9464 9 56 19.2975 56 32C56 44.7025 49.9464 55 42.4789 55C38.6955 55 35.275 52.3566 32.8209 48.0963C30.3667 52.3566 26.9462 55 23.1628 55C4.41926 55 4.13942 9 23.1628 9ZM30.3873 21.6964C29.9084 20.3402 29.3442 19.1174 28.7193 18.0543C26.6881 14.5993 24.5632 13.6 23.1628 13.6C21.7623 13.6 19.6374 14.5993 17.6062 18.0543C17.2343 18.687 16.884 19.3761 16.5603 20.1163C16.8258 20.067 17.0952 20.0418 17.368 20.0418C21.6352 20.0418 25.0943 26.2203 25.0943 33.8418C25.0943 40.7043 22.2898 46.3969 18.6162 47.4626C20.3193 49.7034 21.9935 50.4 23.1628 50.4C24.5632 50.4 26.6881 49.4007 28.7193 45.9457C29.3442 44.8826 29.9084 43.6598 30.3873 42.3036C30.2091 41.6999 30.0462 41.0811 29.8992 40.4485C28.1575 34.7542 28.7608 27.2088 30.3873 21.6964ZM37.9324 47.4627C41.606 46.3969 44.4106 40.7043 44.4106 33.8418C44.4106 26.2203 40.9514 20.0418 36.6842 20.0418C36.4114 20.0418 36.142 20.067 35.8765 20.1163C36.2001 19.3761 36.5505 18.687 36.9224 18.0543C38.9536 14.5993 41.0785 13.6 42.4789 13.6C43.8794 13.6 46.0043 14.5993 48.0355 18.0543C50.0002 21.3965 51.3642 26.3168 51.3642 32C51.3642 37.6832 50.0002 42.6035 48.0355 45.9457C46.0043 49.4007 43.8794 50.4 42.4789 50.4C41.3097 50.4 39.6355 49.7035 37.9324 47.4627Z"
+                            fill="white" />
+                    </svg>
+                    <span>Более 300 видео</span>
+                    <p>на нашей платформе</p>
+                </div>
+                <div class="watch__body-attr-item">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M25.583 30.4165C25.583 28.9898 24.4264 27.8332 22.9997 27.8332C21.5729 27.8332 20.4163 28.9898 20.4163 30.4165V39.2366L26.3397 45.1599C27.3485 46.1687 28.9842 46.1687 29.993 45.1599C31.0019 44.151 31.0019 42.5153 29.993 41.5065L25.583 37.0965V30.4165Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M33.333 9.74984C33.333 11.1766 32.1764 12.3332 30.7497 12.3332L25.583 12.3332V17.6597C35.7776 18.931 43.6663 27.6275 43.6663 38.1665C43.6663 49.5804 34.4136 58.8332 22.9997 58.8332C11.5858 58.8332 2.33301 49.5804 2.33301 38.1665C2.33301 27.6275 10.2217 18.931 20.4163 17.6597V12.3332L15.2497 12.3332C13.8229 12.3332 12.6663 11.1766 12.6663 9.74984C12.6663 8.3231 13.8229 7.1665 15.2497 7.1665H30.7497C32.1764 7.1665 33.333 8.3231 33.333 9.74984ZM23.0041 22.6665L22.9953 22.6665C14.4369 22.6689 7.49967 29.6076 7.49967 38.1665C7.49967 46.7269 14.4393 53.6665 22.9997 53.6665C31.5601 53.6665 38.4997 46.7269 38.4997 38.1665C38.4997 29.6076 31.5625 22.6689 23.0041 22.6665Z"
+                            fill="white" />
+                    </svg>
+                    <span>5–10 минут</span>
+                    <p>длится один ролик kursnova. <br>Ещё и на задачки остаётся!</p>
+                </div>
+            </div>
+        </div>
+        <button class="watch__try">
+            Попробовать за 0 ₽
+        </button>
+    </section>
+    <section class="watch">
+        <div class="watch__body task">
+            <div class="watch__body-info">
+                <h2>Решай</h2>
+                <div class="watch__body-info-wrap">
+                    <img src="../images/dist/task-icon.webp" alt="">
+                    <span>зада</span>
+                    <span>ния</span>
+                </div>
+                <div style="background: url(../images/dist/task-back.webp) center no-repeat; background-size: 100% 100%;"
+                    class="watch__body-info-tags">
+                    <span>Закрепляй</span>
+                    <span>знания из видео</span>
+                </div>
+            </div>
+            <img src="../images/dist/task.webp" alt="" class="watch__body-img">
+            <div class="watch__body-attr">
+                <div class="watch__body-attr-item">
+                    <svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M47.8037 14.1689C50.7184 14.3158 53.0971 16.5536 53.415 19.4277C56.3892 19.7464 58.7256 22.2483 58.7256 25.3164V27.2773C61.6822 27.6126 64 30.1057 64 33.1611L63.9922 33.4668C63.8435 36.3813 61.5828 38.7199 58.7256 39.0439V41.0078L58.7188 41.3145C58.5694 44.2414 56.2896 46.5884 53.415 46.8965C53.0961 49.7695 50.7176 52.0065 47.8037 52.1533L47.498 52.1611C44.2247 52.1609 41.5439 49.5234 41.5439 46.2373V39.084H24.4541V46.2383C24.454 49.4216 21.9378 51.9953 18.8047 52.1533L18.499 52.1611C15.4471 52.161 12.9104 49.869 12.5811 46.8955C9.60726 46.5765 7.27054 44.0756 7.27051 41.0078V39.043C4.31593 38.7059 2.0002 36.215 2 33.1611L2.00781 32.8545C2.15653 29.9413 4.41514 27.603 7.27051 27.2773V25.3154L7.27832 25.0098C7.42756 22.0828 9.70665 19.735 12.5811 19.4268C12.9105 16.4535 15.4472 14.1612 18.499 14.1611L18.8047 14.1689C21.9379 14.3269 24.4541 16.9015 24.4541 20.085V27.2373H41.5439V20.084L41.5518 19.7783C41.712 16.636 44.3269 14.1613 47.498 14.1611L47.8037 14.1689Z"
+                            stroke="white" stroke-width="4" />
+                    </svg>
+                    <span>1 000+ заданий</span>
+                    <p>уже есть на платформе. <br>Регулярно пополняем базу</p>
+                </div>
+                <div class="watch__body-attr-item">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18 13.8325V10.8325C18 9.24122 18.6321 7.7151 19.7574 6.58988C20.8826 5.46466 22.4087 4.83252 24 4.83252C25.5913 4.83252 27.1174 5.46466 28.2426 6.58988C29.3679 7.7151 30 9.24122 30 10.8325V13.8325M3 49.8325V31.8325C3 27.0586 4.89642 22.4803 8.27208 19.1046C11.6477 15.7289 16.2261 13.8325 21 13.8325H27C31.7739 13.8325 36.3523 15.7289 39.7279 19.1046C43.1036 22.4803 45 27.0586 45 31.8325V49.8325C45 52.2195 44.0518 54.5087 42.364 56.1965C40.6761 57.8843 38.3869 58.8325 36 58.8325H12C9.61305 58.8325 7.32387 57.8843 5.63604 56.1965C3.94821 54.5087 3 52.2195 3 49.8325Z"
+                            stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M14.999 58.8325V46.8325C14.999 45.2412 15.6312 43.7151 16.7564 42.5899C17.8816 41.4647 19.4077 40.8325 20.999 40.8325H26.999C28.5903 40.8325 30.1164 41.4647 31.2417 42.5899C32.3669 43.7151 32.999 45.2412 32.999 46.8325V58.8325M20.999 25.8325H26.999"
+                            stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>3 предмета</span>
+                    <p>уже в доступе математика, <br>химия и биология. Вся школьная <br>программа будет в сентябре</p>
+                </div>
+            </div>
+        </div>
+        <button class="watch__try">
+            Попробовать за 0 ₽
+        </button>
+    </section>
+    <section class="how">
+        <div class="container">
+            <div class="how__body">
+                <h2>
+                    Как все устроено
+                </h2>
+                <div class="how__body-block">
+                    <div class="how__body-block-item">
+                        <img src="../images/dist/how/1.png" alt="">
+                        <span>Трекай прогресс по предметам</span>
+                    </div>
+                    <div class="how__body-block-item">
+                        <img src="../images/dist/how/2.png" alt="">
+                        <span>Получай награду в виде опыта и игровой валюты</span>
+                    </div>
+                    <div class="how__body-block-item">
+                        <p class="soon">
+                            Скоро
+                        </p>
+                        <img src="../images/dist/how/3.png" alt="">
+                        <span>Меняй коины на дни заморозки, стикеры, мерч и другие приятные мелочи</span>
+                    </div>
+                    <div class="how__body-block-item">
+                        <img src="../images/dist/how/4.png" alt="">
+                        <span>Занимайся ежедневно, дни заморозки сохранят прогресс</span>
+                    </div>
+                </div>
+                <img src="../images/dist/how-icon.webp" alt="" class="how__body-img">
+            </div>
+        </div>
+        <button class="how__try">
+            Попробовать за 0 ₽
+        </button>
+    </section>
+    <section class="teachers">
+        <div class="text">
+            <h2>
+                «Вот бы так в школе <br> объясняли...»
+            </h2>
+            <p>
+                Наши учителя так сильно любят свои <br> предметы, что заражают этим учеников
+            </p>
+        </div>
+        <div class="splide" id="teach" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                    Назад
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                    Вперёд
+                </button>
+            </div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="../images/dist/teachers/1.png" alt="">
+                        <h3>
+                            Арман <br> Костанян
+                        </h3>
+                        <div class="tags">
+                            <span>Математика</span>
+                            <span>7 лет опыта</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="../images/dist/teachers/2.png" alt="">
+                        <h3>
+                            Елизавета <br> Романова
+                        </h3>
+                        <div class="tags">
+                            <span>Химия</span>
+                            <span>7 лет опыта</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="../images/dist/teachers/3.png" alt="">
+                        <h3>
+                            Даниил <br> Гурнович
+                        </h3>
+                        <div class="tags">
+                            <span>Биология</span>
+                            <span>11 лет опыта</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="../images/dist/teachers/4.png" alt="">
+                        <h3>
+                            Динар <br> Габидуллин
+                        </h3>
+                        <div class="tags">
+                            <span>Управление</span>
+                            <span>11 лет опыта</span>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="../images/dist/teachers/5.png" alt="">
+                        <h3>
+                            Максим <br> Булатов
+                        </h3>
+                        <div class="tags">
+                            <span>Управление</span>
+                            <span>15+ лет опыта</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="teachers__try">
+            Попробовать за 0 ₽
+        </button>
+    </section>
+    <section class="support">
+        <div class="support__body">
+            <img src="../images/dist/support/1.png" alt="">
+            <img src="../images/dist/support/2.png" alt="">
+            <img src="../images/dist/support/3.png" alt="">
+            <img src="../images/dist/support/4.png" alt="">
+            <div class="text">
+                <p>Кроме того</p>
+                <h2>
+                    В нашу поддержку можно <br> обратиться с любым <br> вопросом
+                </h2>
+            </div>
+            <button>
+                Работа приложения
+            </button>
+        </div>
+        <button class="support__try">
+            Попробовать за 0 ₽
+        </button>
+    </section>
+    <section class="price">
+        <div class="price__body">
+            <h2>Что по ценам?</h2>
+            <div class="price__body-block">
+                <div class="price__body-block-items">
+                    <div>
+                        <h3>Год</h3>
+                        <span>24 000 ₽</span>
+                        <p>+2,5 месяца в подарок в первый год</p>
+                        <span class="tag">
+                            Выгода до 12 500 ₽
+                        </span>
+                    </div>
+                    <div>
+                        <h3>Месяц</h3>
+                        <span>2 500 ₽</span>
+                    </div>
+                </div>
+                <ul class="price__body-block-list">
+                    <li>
+                        300+ видеороликов
+                    </li>
+                    <li>
+                        3 000+ заданий
+                    </li>
+                    <li>
+                        Интерактивный личный кабинет <br> с прогрессом и оценкой знаний
+                    </li>
+                    <li>
+                        Наставники, которые ответят <br> на вопросы за 5 минут
+                    </li>
+                    <li>
+                        Выбор предметов
+                    </li>
+                    <li>
+                        Круглосуточный доступ к платформе 
+                    </li>
+                    <li>
+                        Челленджи и награды
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <svg class="arrow" width="252" height="251" viewBox="0 0 252 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.6146 185.16C15.6101 178.012 8.47681 152.256 20.6141 134.171C35.7858 111.564 103.717 116.988 105.324 145.16C106.931 173.332 34.5989 100.872 72.3242 57.6602C92.8402 34.1602 175.824 1.16016 236.824 108.404" stroke="white" stroke-width="2"/>
+            <path d="M234.824 90.6602L237.324 109.66L218.824 98.6602" stroke="white" stroke-width="2"/>
+            </svg>
+        <svg class="back" width="329" height="309" viewBox="0 0 329 309" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.3202 82.4544L0.5 206.667V311.167H329L229 247.167L279 171.167L198.5 196.667L247.128 0.946289L86 206.667L19.3202 82.4544Z" fill="#FDBCFF"/>
+        </svg>        
+        <div class="try">
+            <img src="../images/dist/price.webp" alt="">
+            <p>
+                Или попробуй <br>2 недели бесплатно
+            </p>
+        </div>
+        <button class="price__try">
+            Попробовать за 0 ₽
+        </button>
+    </section>
+    <section class="que">
+        <div class="container">
+            <div class="que__body">
+                <h2>Частые вопросы</h2>
+                <div class="que__body-items">
+                    <div class="que__body-items-item">
+                        <div class="que__body-items-item-top">
+                            <span>Можно ли заниматься с планшета?</span>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="38" height="38" rx="19" stroke="white" stroke-width="2"/>
+                                <path d="M21.2734 19.2725H28V21.2725H21.2734V28H19.2734V21.2725H12V19.2725H19.2734V12H21.2734V19.2725Z" fill="white"/>
+                            </svg>                            
+                        </div>
+                        <div class="que__body-items-item-bot">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsa recusandae. Placeat odio, ipsum possimus debitis libero rem voluptas delectus blanditiis hic in, eos reiciendis id illo, cumque est sit.
+                            Libero cupiditate, eveniet deleniti, facilis corrupti illum vitae totam, dolorum facere reprehenderit accusantium harum corporis. Quis, iure et impedit, eos sunt dolore laborum esse dignissimos quaerat voluptatibus dicta molestias temporibus?
+                            Porro officia libero maxime nemo! Officia magnam sit atque nisi eveniet explicabo veniam, temporibus eius facilis harum ab illo fugit totam quo rerum voluptates eum, adipisci minima odio, commodi mollitia!
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="que__body-items-item">
+                        <div class="que__body-items-item-top">
+                            <span>Что, если программа не совпадает со школой?</span>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="38" height="38" rx="19" stroke="white" stroke-width="2"/>
+                                <path d="M21.2734 19.2725H28V21.2725H21.2734V28H19.2734V21.2725H12V19.2725H19.2734V12H21.2734V19.2725Z" fill="white"/>
+                            </svg>                            
+                        </div>
+                        <div class="que__body-items-item-bot">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsa recusandae. Placeat odio, ipsum possimus debitis libero rem voluptas delectus blanditiis hic in, eos reiciendis id illo, cumque est sit.
+                            Libero cupiditate, eveniet deleniti, facilis corrupti illum vitae totam, dolorum facere reprehenderit accusantium harum corporis. Quis, iure et impedit, eos sunt dolore laborum esse dignissimos quaerat voluptatibus dicta molestias temporibus?
+                            Porro officia libero maxime nemo! Officia magnam sit atque nisi eveniet explicabo veniam, temporibus eius facilis harum ab illo fugit totam quo rerum voluptates eum, adipisci minima odio, commodi mollitia!
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="que__body-items-item">
+                        <div class="que__body-items-item-top">
+                            <span>Можно ли заниматься без интернета?</span>
+    
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="38" height="38" rx="19" stroke="white" stroke-width="2"/>
+                                <path d="M21.2734 19.2725H28V21.2725H21.2734V28H19.2734V21.2725H12V19.2725H19.2734V12H21.2734V19.2725Z" fill="white"/>
+                            </svg>                            
+                        </div>
+                        <div class="que__body-items-item-bot">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsa recusandae. Placeat odio, ipsum possimus debitis libero rem voluptas delectus blanditiis hic in, eos reiciendis id illo, cumque est sit.
+                            Libero cupiditate, eveniet deleniti, facilis corrupti illum vitae totam, dolorum facere reprehenderit accusantium harum corporis. Quis, iure et impedit, eos sunt dolore laborum esse dignissimos quaerat voluptatibus dicta molestias temporibus?
+                            Porro officia libero maxime nemo! Officia magnam sit atque nisi eveniet explicabo veniam, temporibus eius facilis harum ab illo fugit totam quo rerum voluptates eum, adipisci minima odio, commodi mollitia!
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="que__body-items-item">
+                        <div class="que__body-items-item-top">
+                            <span>Можно ли выбрать только один предмет или нужно оплачивать всю программу?</span>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="38" height="38" rx="19" stroke="white" stroke-width="2"/>
+                                <path d="M21.2734 19.2725H28V21.2725H21.2734V28H19.2734V21.2725H12V19.2725H19.2734V12H21.2734V19.2725Z" fill="white"/>
+                            </svg>                            
+                        </div>
+                        <div class="que__body-items-item-bot">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsa recusandae. Placeat odio, ipsum possimus debitis libero rem voluptas delectus blanditiis hic in, eos reiciendis id illo, cumque est sit.
+                            Libero cupiditate, eveniet deleniti, facilis corrupti illum vitae totam, dolorum facere reprehenderit accusantium harum corporis. Quis, iure et impedit, eos sunt dolore laborum esse dignissimos quaerat voluptatibus dicta molestias temporibus?
+                            Porro officia libero maxime nemo! Officia magnam sit atque nisi eveniet explicabo veniam, temporibus eius facilis harum ab illo fugit totam quo rerum voluptates eum, adipisci minima odio, commodi mollitia!
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="que__body-items-item">
+                        <div class="que__body-items-item-top">
+                            <span>Есть ли задания для подготовки к ОГЭ/ЕГЭ?</span>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="1" width="38" height="38" rx="19" stroke="white" stroke-width="2"/>
+                                <path d="M21.2734 19.2725H28V21.2725H21.2734V28H19.2734V21.2725H12V19.2725H19.2734V12H21.2734V19.2725Z" fill="white"/>
+                            </svg>                            
+                        </div>
+                        <div class="que__body-items-item-bot">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsa recusandae. Placeat odio, ipsum possimus debitis libero rem voluptas delectus blanditiis hic in, eos reiciendis id illo, cumque est sit.
+                            Libero cupiditate, eveniet deleniti, facilis corrupti illum vitae totam, dolorum facere reprehenderit accusantium harum corporis. Quis, iure et impedit, eos sunt dolore laborum esse dignissimos quaerat voluptatibus dicta molestias temporibus?
+                            Porro officia libero maxime nemo! Officia magnam sit atque nisi eveniet explicabo veniam, temporibus eius facilis harum ab illo fugit totam quo rerum voluptates eum, adipisci minima odio, commodi mollitia!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="que__try">
+            Попробовать за 0 ₽
+        </button>
+    </section>
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__body-blocks">
+                <div class="footer__body-blocks-vk">
+                    <svg width="138" height="36" viewBox="0 0 138 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M127.041 12.5859C130.653 12.5859 133.382 13.5237 135.229 15.3984C137.077 17.2456 138 19.9332 138 23.4619V25.7363H122.616C122.644 26.591 122.796 27.3222 123.071 27.9287C123.347 28.5076 123.705 28.99 124.146 29.376C124.588 29.762 125.084 30.0512 125.636 30.2441C126.215 30.4095 126.821 30.4922 127.455 30.4922C128.668 30.4922 129.619 30.3135 130.309 29.9551C131.025 29.5691 131.494 29.0589 131.715 28.4248H137.587C137.146 30.8232 136.057 32.6153 134.32 33.8008C132.583 34.9863 130.295 35.5791 127.455 35.5791C125.856 35.5791 124.353 35.3581 122.947 34.917C121.569 34.4483 120.37 33.7458 119.35 32.8086C118.33 31.8712 117.53 30.699 116.951 29.293C116.372 27.8594 116.083 26.1913 116.083 24.2891V23.4619C116.083 21.6424 116.358 20.0569 116.909 18.7061C117.488 17.3552 118.261 16.2252 119.226 15.3154C120.218 14.4057 121.376 13.7302 122.699 13.2891C124.05 12.8204 125.497 12.586 127.041 12.5859ZM127.248 17.6309C126.669 17.6309 126.104 17.7001 125.553 17.8379C125.029 17.9757 124.547 18.2102 124.105 18.541C123.692 18.8443 123.347 19.244 123.071 19.7402C122.823 20.2364 122.686 20.8429 122.658 21.5596H131.756C131.756 20.7878 131.632 20.1534 131.384 19.6572C131.136 19.1611 130.805 18.7612 130.392 18.458C130.006 18.1548 129.537 17.9482 128.985 17.8379C128.434 17.7 127.855 17.6309 127.248 17.6309Z" fill="#19191C"/>
+                        <path d="M104.674 12.6807C107.401 12.6807 109.679 13.2883 111.508 14.5029C113.337 15.7176 114.427 17.4115 114.78 19.585L108.765 20.7832C108.572 19.9203 108.139 19.2172 107.465 18.6738C106.13 17.5439 103.319 17.5291 101.834 18.3857C101.257 18.7373 100.968 19.1235 100.968 19.585C100.968 20.7581 103.255 21.0522 104.048 21.2148L107.08 21.79C110.199 22.3778 114.829 23.9547 114.829 27.7559C114.829 30.057 113.93 31.927 112.134 33.3652C110.369 34.7716 107.802 35.4746 104.434 35.4746C101.45 35.4746 99.0427 34.8511 97.2139 33.6045C95.3853 32.3259 94.2785 30.4879 93.8936 28.0908L100.15 27.3242C100.375 28.2829 100.84 29.0179 101.546 29.5293C103.03 30.4937 105.9 30.6352 107.465 29.7695C108.074 29.418 108.38 28.9382 108.38 28.3311C108.38 26.0234 103.944 26.1879 102.212 25.8789C99.9018 25.4634 97.72 24.7628 96.4688 23.708C95.2496 22.6213 94.6153 21.5985 94.6152 19.585C94.6152 17.1239 95.5456 15.925 97.4062 14.6465C99.2992 13.336 101.722 12.6807 104.674 12.6807Z" fill="#19191C"/>
+                        <path d="M73.3203 34.6436H66.4658V29.249H66.1816C65.2702 32.5115 62.2665 34.9062 58.7012 34.9062C54.4131 34.9062 50.9367 31.4428 50.9365 27.1709V12.8125H57.791V24.9922C57.7911 27.3783 59.7328 29.3123 62.1279 29.3125C64.5232 29.3125 66.4658 27.3784 66.4658 24.9922V12.8027H73.3203V34.6436Z" fill="#19191C"/>
+                        <path d="M33.5459 21.4639H36.2363L41.5195 12.8203H49.0605L41.9521 23.5029L49.6846 34.6562H41.9521L36.1875 25.2734H33.5459V34.6562H26.6777V0.386719H33.5459V21.4639Z" fill="#19191C"/>
+                        <path d="M82.5342 17.2559H82.7617C83.472 14.7753 85.7646 12.959 88.4824 12.959H92.6436V19.082H86.2822C84.2524 19.0822 82.5992 20.6889 82.5342 22.6953V34.6553H75.6797V12.8057H82.5342V17.2559Z" fill="#19191C"/>
+                        <path d="M12.5703 27.8008H12.8545L18.5039 12.8057H25.4248L17.1963 34.6465H8.22852L0 12.8057H6.9209L12.5703 27.8008Z" fill="#19191C"/>
+                    </svg>                    
+                    <p>В курсе — наше медиа <br>для небезразличных родителей</p>
+                    <div class="tags">
+                        <a href="">Телеграм</a>
+                        <a href="">Вконтакте</a>
+                    </div>
+                </div>
+                <div class="footer__body-blocks-default">
+                    <div class="text">
+                        <span>Связаться с нами</span>
+                        <a href="">hello@kursnova.com</a>
+                    </div>
+                    <div class="social">
+                        <a href="">WhatsApp</a>
+                        <a href="">Телеграм</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__body-links">
+                <a href="">Согласие на обработку персональных данных</a>
+                <a href="">Согласие на получение информационных сообщений</a>
+                <a href="">Пользовательское соглашение</a>
+                <a href="">Оферта</a>
+                <a href="">Лицензия на образовательную деятельность</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <script src="../js/main.min.js"></script>
+</body>
+
+</html>

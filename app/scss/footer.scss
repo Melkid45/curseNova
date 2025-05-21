@@ -1,0 +1,109 @@
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+    padding-top: 256px;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        gap: 206px;
+        &-blocks{
+            display: flex;
+            gap: 32px;
+            &-vk{
+                background: url(../images/dist/footer__back.webp) center no-repeat;
+                background-size: 100% 100%;
+                width: 730px;
+                height: 270px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                border-radius: 32px;
+                padding: 32px;
+                svg{
+                    width: 148px;
+                    height: 40px;
+                }
+                p{
+                    font-weight: 550;
+                    font-size: 32px;
+                    line-height: 40px;
+                    letter-spacing: 1%;
+                    color: #14141A;
+                }
+                .tags{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    margin-top: 14px;
+                    a{
+                        padding: 12px 20px;
+                        background: #fff;
+                        border-radius: 50px;
+                        font-weight: 550;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 0%;
+                        color: #14141A;
+                    }
+                }
+            }
+            &-default{
+                width: 395px;
+                border-radius: 32px;
+                padding: 32px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background: #25252B;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    span{
+                        font-weight: 550;
+                        font-size: 23.16px;
+                        line-height: 31.84px;
+                        letter-spacing: 0.5%;
+                        color: #FFFFFF;
+                    }
+                    a{
+                        font-weight: 550;
+                        font-size: 32px;
+                        line-height: 40px;
+                        letter-spacing: 1%;
+                        color: #fff;
+                    }
+                }
+                .social{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    a{
+                        padding: 12px 20px;
+                        background: #4B4B55;
+                        border-radius: 50px;
+                        font-weight: 550;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 0%;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &-links{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            a{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0%;
+                color: #9999AA;
+            }
+        }
+    }
+}

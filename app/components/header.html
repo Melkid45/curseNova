@@ -1,0 +1,143 @@
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <a href="/" class="header__body-logo">
+                <img src="../images/dist/logo.svg" alt="">
+            </a>
+            <div class="header__body-tabs">
+                <a class="active" href="/parent.html">
+                    Родителям
+                </a>
+                <a href="/child.html">
+                    Ученикам
+                </a>
+            </div>
+            <div class="header__body-action">
+                <button class="header__body-action-sign auth-open">
+                    Войти
+                </button>
+                <button class="burger">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="modal">
+    <div class="modal_wrap">
+        <button class="modal-close">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M25.0673 4.85347C25.6565 4.37337 26.5251 4.40799 27.0742 4.95699C27.6231 5.50602 27.6578 6.37472 27.1777 6.96383L27.0742 7.07808L18.1357 16.0156L27.0742 24.9541L27.1777 25.0683C27.6577 25.6575 27.6231 26.5262 27.0742 27.0752C26.5252 27.6241 25.6565 27.6587 25.0673 27.1787L24.9531 27.0752L16.0156 18.1367L7.07808 27.0752L6.96382 27.1787C6.37473 27.6587 5.50602 27.624 4.95698 27.0752C4.40799 26.5261 4.37337 25.6575 4.85347 25.0683L4.95698 24.9541L13.8945 16.0156L4.95698 7.07808L4.85347 6.96383C4.37336 6.37469 4.40801 5.50602 4.95698 4.95699C5.50601 4.40799 6.37468 4.37337 6.96382 4.85347L7.07808 4.95699L16.0156 13.8945L24.9531 4.95699L25.0673 4.85347Z"
+                    fill="#16161C" />
+            </svg>
+        </button>
+        <div class="modal__body">
+            <div class="modal__body-top">
+                <div class="modal__body-top-auth">
+                    <div class="modal__body-top-auth-tabs">
+                        <a class="active" href="/parent.html">
+                            Родителям
+                        </a>
+                        <a href="/child.html">
+                            Ученикам
+                        </a>
+                    </div>
+                    <button class="modal__body-top-auth-sign">
+                        Войти
+                    </button>
+                </div>
+                <nav class="modal__body-top-menu">
+                    <ul>
+                        <li>
+                            <a href="">Как всё устроено</a>
+                        </li>
+                        <li>
+                            <a href="">Учителя</a>
+                        </li>
+                        <li>
+                            <a href="">Цены</a>
+                        </li>
+                        <li>
+                            <a href="">Частые вопросы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <svg class="arrow" width="193" height="187" viewBox="0 0 193 187" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M71.001 27.9995C147.999 23.4995 116.002 86.999 101.501 70.9995C87 55 127.441 45.5455 148 76.1652C159.18 92.8171 159 147.5 96.9839 163.948"
+                    stroke="white" stroke-width="2" />
+                <path d="M108.336 165.658L96.1198 164.049L106.03 154.39" stroke="white" stroke-width="2" />
+            </svg>
+            <img src="../images/dist/modal-icon.webp" alt="">
+            <button class="modal__body-try">
+                Попробовать kursnova за 0 ₽
+            </button>
+        </div>
+    </div>
+</div>
+<div class="auth">
+    <div class="auth__body">
+        <div class="auth__body-main">
+            <button class="auth-close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.31033 5.3103C5.67645 4.94422 6.25547 4.9216 6.64822 5.24194L6.72439 5.3103L16.0154 14.6013L25.3064 5.3103L25.3826 5.24194C25.7754 4.92161 26.3544 4.9442 26.7205 5.3103C27.0864 5.67642 27.1091 6.25548 26.7888 6.64819L26.7205 6.72436L17.4285 16.0154L26.7205 25.3074L26.7888 25.3835C27.1091 25.7763 27.0865 26.3554 26.7205 26.7214C26.3544 27.0875 25.7754 27.11 25.3826 26.7898L25.3064 26.7214L16.0154 17.4294L6.72439 26.7214L6.64822 26.7898C6.25552 27.1101 5.67649 27.0874 5.31033 26.7214C4.94422 26.3553 4.92157 25.7763 5.24197 25.3835L5.31033 25.3074L14.6013 16.0154L5.31033 6.72436L5.24197 6.64819C4.92162 6.25541 4.94422 5.67641 5.31033 5.3103Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <h3>
+                Введи данные 
+            </h3>
+            <form action="" method="post" class="auth__body-main-form">
+                <div class="inputs">
+                    <div class="inputs__input">
+                        <span>Имя</span>
+                        <input type="text">
+                    </div>
+                    <div class="inputs__input">
+                        <span>Телефон</span>
+                        <input type="tel">
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        Я родитель
+                        <input type="radio" class="modern-radio" value="Родитель" name="a">
+                        <span></span>
+                    </label>
+                    <label>
+                        Я ученик
+                        <input checked type="radio" class="modern-radio" value="Ученик" name="a">
+                        <span></span>
+                    </label>
+                </div>
+                <button type="button">
+                    Получить бесплатный доступ
+                </button>
+                <p>Нажимая на кнопку, вы соглашаетесь с <a href="">условиями</a> сбора и обработки данных</p>
+            </form>
+        </div>
+        <div class="auth__body-good">
+            <button class="auth-close">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.31033 5.3103C5.67645 4.94422 6.25547 4.9216 6.64822 5.24194L6.72439 5.3103L16.0154 14.6013L25.3064 5.3103L25.3826 5.24194C25.7754 4.92161 26.3544 4.9442 26.7205 5.3103C27.0864 5.67642 27.1091 6.25548 26.7888 6.64819L26.7205 6.72436L17.4285 16.0154L26.7205 25.3074L26.7888 25.3835C27.1091 25.7763 27.0865 26.3554 26.7205 26.7214C26.3544 27.0875 25.7754 27.11 25.3826 26.7898L25.3064 26.7214L16.0154 17.4294L6.72439 26.7214L6.64822 26.7898C6.25552 27.1101 5.67649 27.0874 5.31033 26.7214C4.94422 26.3553 4.92157 25.7763 5.24197 25.3835L5.31033 25.3074L14.6013 16.0154L5.31033 6.72436L5.24197 6.64819C4.92162 6.25541 4.94422 5.67641 5.31033 5.3103Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <img src="../images/dist/modal-good.webp" alt="">
+            <div class="text">
+                <h3>Cпасибо! Ссылка на бесплатный <br>доступ уже на почте</h3>
+                <p>Если ничего не пришло, проверь папку «Спам»</p>
+            </div>
+            <button class="good-btn">
+                Отлично, спасибо
+            </button>
+        </div>
+    </div>
+</div>
