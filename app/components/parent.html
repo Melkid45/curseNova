@@ -1,17 +1,17 @@
 <section class="parent">
-    <img src="../images/dist/parent.webp" alt="" class="parent__back">
+    <video id="scroll-child" preload="auto" muted playsinline webkit-playsinline src="../images/dist/bomb.mp4"></video>
     <div class="parent__text">
         <h1>
-            <span>Домашки</span>
-            <span>и контрольные </span>
-            <span>больше </span>
-            <span>не проблема</span>
+            <span class="element-animation">Домашки</span>
+            <span class="element-animation">и контрольные </span>
+            <span class="element-animation">больше </span>
+            <span class="element-animation">не проблема</span>
         </h1>
-        <div class="parent__text-tags">
+        <div class="parent__text-tags element-animation">
             С kursnova
         </div>
     </div>
-    <a href="" class="parent__scroll">
+    <a href="" class="parent__scroll element-animation">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M6 9C6 7.4087 6.63214 5.88258 7.75736 4.75736C8.88258 3.63214 10.4087 3 12 3C13.5913 3 15.1174 3.63214 16.2426 4.75736C17.3679 5.88258 18 7.4087 18 9V15C18 16.5913 17.3679 18.1174 16.2426 19.2426C15.1174 20.3679 13.5913 21 12 21C10.4087 21 8.88258 20.3679 7.75736 19.2426C6.63214 18.1174 6 16.5913 6 15V9Z"
@@ -22,6 +22,7 @@
     </a>
 </section>
 <section class="learning">
+    <video id="scroll-video" preload="auto" muted playsinline src="../images/dist/child-video.mp4"></video>
     <div class="learning__text">
         <p>Учись в любимом формате       нужен только    смартфон</p>
         <img src="../images/dist/lyearning/1.png" alt="">
@@ -36,18 +37,18 @@
 <section class="watch">
     <div class="watch__body">
         <div class="watch__body-info">
-            <h2>Смотри</h2>
-            <div class="watch__body-info-wrap">
+            <h2 class="element-animation">Смотри</h2>
+            <div class="watch__body-info-wrap element-animation">
                 <img src="../images/dist/watch-icon.webp" alt="">
                 <span>ви</span>
                 <span>део</span>
             </div>
             <div style="background: url(../images/dist/watch_back.webp) center no-repeat; background-size: 100% 100%;"
-                class="watch__body-info-tags">
+                class="watch__body-info-tags element-animation">
                 <span>Школьная программа</span>
                 <span>в формате тик-токов</span>
             </div>
-            <button class="watch__body-info-primer">
+            <button class="watch__body-info-primer element-animation">
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.618164" y="4.24023" width="24" height="24" rx="12"
                         transform="rotate(-8.3649 0.618164 4.24023)" fill="white" />
@@ -58,9 +59,9 @@
                 Смотреть пример
             </button>
         </div>
-        <img src="../images/dist/watch.webp" alt="" class="watch__body-img">
+        <img src="../images/dist/watch.webp" alt="" class="watch__body-img element-animation">
         <div class="watch__body-attr">
-            <div class="watch__body-attr-item">
+            <div class="watch__body-attr-item element-animation">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M23.1628 9C26.9462 9 30.3667 11.6434 32.8209 15.9037C35.275 11.6434 38.6955 9 42.4789 9C49.9464 9 56 19.2975 56 32C56 44.7025 49.9464 55 42.4789 55C38.6955 55 35.275 52.3566 32.8209 48.0963C30.3667 52.3566 26.9462 55 23.1628 55C4.41926 55 4.13942 9 23.1628 9ZM30.3873 21.6964C29.9084 20.3402 29.3442 19.1174 28.7193 18.0543C26.6881 14.5993 24.5632 13.6 23.1628 13.6C21.7623 13.6 19.6374 14.5993 17.6062 18.0543C17.2343 18.687 16.884 19.3761 16.5603 20.1163C16.8258 20.067 17.0952 20.0418 17.368 20.0418C21.6352 20.0418 25.0943 26.2203 25.0943 33.8418C25.0943 40.7043 22.2898 46.3969 18.6162 47.4626C20.3193 49.7034 21.9935 50.4 23.1628 50.4C24.5632 50.4 26.6881 49.4007 28.7193 45.9457C29.3442 44.8826 29.9084 43.6598 30.3873 42.3036C30.2091 41.6999 30.0462 41.0811 29.8992 40.4485C28.1575 34.7542 28.7608 27.2088 30.3873 21.6964ZM37.9324 47.4627C41.606 46.3969 44.4106 40.7043 44.4106 33.8418C44.4106 26.2203 40.9514 20.0418 36.6842 20.0418C36.4114 20.0418 36.142 20.067 35.8765 20.1163C36.2001 19.3761 36.5505 18.687 36.9224 18.0543C38.9536 14.5993 41.0785 13.6 42.4789 13.6C43.8794 13.6 46.0043 14.5993 48.0355 18.0543C50.0002 21.3965 51.3642 26.3168 51.3642 32C51.3642 37.6832 50.0002 42.6035 48.0355 45.9457C46.0043 49.4007 43.8794 50.4 42.4789 50.4C41.3097 50.4 39.6355 49.7035 37.9324 47.4627Z"
@@ -69,7 +70,7 @@
                 <span>Более 300 видео</span>
                 <p>на нашей платформе</p>
             </div>
-            <div class="watch__body-attr-item">
+            <div class="watch__body-attr-item element-animation">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M25.583 30.4165C25.583 28.9898 24.4264 27.8332 22.9997 27.8332C21.5729 27.8332 20.4163 28.9898 20.4163 30.4165V39.2366L26.3397 45.1599C27.3485 46.1687 28.9842 46.1687 29.993 45.1599C31.0019 44.151 31.0019 42.5153 29.993 41.5065L25.583 37.0965V30.4165Z"
@@ -90,21 +91,21 @@
 <section class="watch">
     <div class="watch__body task">
         <div class="watch__body-info">
-            <h2>Решай</h2>
-            <div class="watch__body-info-wrap">
+            <h2 class="element-animation">Решай</h2>
+            <div class="watch__body-info-wrap element-animation">
                 <img src="../images/dist/task-icon.webp" alt="">
                 <span>зада</span>
                 <span>ния</span>
             </div>
             <div style="background: url(../images/dist/task-back.webp) center no-repeat; background-size: 100% 100%;"
-                class="watch__body-info-tags">
+                class="watch__body-info-tags element-animation">
                 <span>Закрепляй</span>
                 <span>знания из видео</span>
             </div>
         </div>
-        <img src="../images/dist/task.webp" alt="" class="watch__body-img">
+        <img src="../images/dist/task.webp" alt="" class="watch__body-img element-animation">
         <div class="watch__body-attr">
-            <div class="watch__body-attr-item">
+            <div class="watch__body-attr-item element-animation">
                 <svg width="66" height="64" viewBox="0 0 66 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M47.8037 14.1689C50.7184 14.3158 53.0971 16.5536 53.415 19.4277C56.3892 19.7464 58.7256 22.2483 58.7256 25.3164V27.2773C61.6822 27.6126 64 30.1057 64 33.1611L63.9922 33.4668C63.8435 36.3813 61.5828 38.7199 58.7256 39.0439V41.0078L58.7188 41.3145C58.5694 44.2414 56.2896 46.5884 53.415 46.8965C53.0961 49.7695 50.7176 52.0065 47.8037 52.1533L47.498 52.1611C44.2247 52.1609 41.5439 49.5234 41.5439 46.2373V39.084H24.4541V46.2383C24.454 49.4216 21.9378 51.9953 18.8047 52.1533L18.499 52.1611C15.4471 52.161 12.9104 49.869 12.5811 46.8955C9.60726 46.5765 7.27054 44.0756 7.27051 41.0078V39.043C4.31593 38.7059 2.0002 36.215 2 33.1611L2.00781 32.8545C2.15653 29.9413 4.41514 27.603 7.27051 27.2773V25.3154L7.27832 25.0098C7.42756 22.0828 9.70665 19.735 12.5811 19.4268C12.9105 16.4535 15.4472 14.1612 18.499 14.1611L18.8047 14.1689C21.9379 14.3269 24.4541 16.9015 24.4541 20.085V27.2373H41.5439V20.084L41.5518 19.7783C41.712 16.636 44.3269 14.1613 47.498 14.1611L47.8037 14.1689Z"
@@ -113,7 +114,7 @@
                 <span>1 000+ заданий</span>
                 <p>уже есть на платформе. <br>Регулярно пополняем базу</p>
             </div>
-            <div class="watch__body-attr-item">
+            <div class="watch__body-attr-item element-animation">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M18 13.8325V10.8325C18 9.24122 18.6321 7.7151 19.7574 6.58988C20.8826 5.46466 22.4087 4.83252 24 4.83252C25.5913 4.83252 27.1174 5.46466 28.2426 6.58988C29.3679 7.7151 30 9.24122 30 10.8325V13.8325M3 49.8325V31.8325C3 27.0586 4.89642 22.4803 8.27208 19.1046C11.6477 15.7289 16.2261 13.8325 21 13.8325H27C31.7739 13.8325 36.3523 15.7289 39.7279 19.1046C43.1036 22.4803 45 27.0586 45 31.8325V49.8325C45 52.2195 44.0518 54.5087 42.364 56.1965C40.6761 57.8843 38.3869 58.8325 36 58.8325H12C9.61305 58.8325 7.32387 57.8843 5.63604 56.1965C3.94821 54.5087 3 52.2195 3 49.8325Z"
@@ -134,31 +135,31 @@
 <section class="how">
     <div class="container">
         <div class="how__body">
-            <h2>
+            <h2 class="element-animation">
                 Как все устроено
             </h2>
             <div class="how__body-block">
-                <div class="how__body-block-item">
+                <div class="how__body-block-item element-animation">
                     <img src="../images/dist/how/1.png" alt="">
                     <span>Трекай прогресс по предметам</span>
                 </div>
-                <div class="how__body-block-item">
+                <div class="how__body-block-item element-animation">
                     <img src="../images/dist/how/2.png" alt="">
                     <span>Получай награду в виде опыта и игровой валюты</span>
                 </div>
-                <div class="how__body-block-item">
+                <div class="how__body-block-item element-animation">
                     <p class="soon">
                         Скоро
                     </p>
                     <img src="../images/dist/how/3.png" alt="">
                     <span>Меняй коины на дни заморозки, стикеры, мерч и другие приятные мелочи</span>
                 </div>
-                <div class="how__body-block-item">
+                <div class="how__body-block-item element-animation">
                     <img src="../images/dist/how/4.png" alt="">
                     <span>Занимайся ежедневно, дни заморозки сохранят прогресс</span>
                 </div>
             </div>
-            <img src="../images/dist/how-icon.webp" alt="" class="how__body-img">
+            <img src="../images/dist/how-icon.webp" alt="" class="how__body-img element-animation">
         </div>
     </div>
     <button class="how__try">
@@ -244,19 +245,36 @@
 </section>
 <section class="support">
     <div class="support__body">
-        <img src="../images/dist/support/1.png" alt="">
-        <img src="../images/dist/support/2.png" alt="">
-        <img src="../images/dist/support/3.png" alt="">
-        <img src="../images/dist/support/4.png" alt="">
+        <img class="img-1" src="../images/dist/support/1.png" alt="">
+        <img class="img-2" src="../images/dist/support/2.png" alt="">
+        <img class="img-3" src="../images/dist/support/3.png" alt="">
+        <img class="img-4" src="../images/dist/support/4.png" alt="">
+        <img class="img-5" src="../images/dist/support/5.png" alt="">
+        <img class="img-6" src="../images/dist/support/6.png" alt="">
+        <img class="img-7" src="../images/dist/support/7.png" alt="">
+        <img class="img-8" src="../images/dist/support/8.png" alt="">
+        <img class="img-9" src="../images/dist/support/9.png" alt="">
+        <img class="img-10" src="../images/dist/support/10.png" alt="">
+        <img class="img-11" src="../images/dist/support/11.png" alt="">
+        <img class="img-12" src="../images/dist/support/12.png" alt="">
         <div class="text">
             <p>Кроме того</p>
             <h2>
                 В нашу поддержку можно <br> обратиться с любым <br> вопросом
             </h2>
         </div>
-        <button>
-            Работа приложения
-        </button>
+        <div class="buttons__wrap">
+            <button class="btn-1">
+                Работа приложения
+            </button>
+            <button class="btn-2">
+                Психологическая помощь
+            </button>
+            <button class="btn-3">
+                Помощь с уроками
+            </button>
+        </div>
+        
     </div>
     <button class="support__try">
         Попробовать за 0 ₽
@@ -264,10 +282,10 @@
 </section>
 <section class="price">
     <div class="price__body">
-        <h2>Что по ценам?</h2>
+        <h2 class="element-animation">Что по ценам?</h2>
         <div class="price__body-block">
             <div class="price__body-block-items">
-                <div>
+                <div class="element-animation">
                     <h3>Год</h3>
                     <span>24 000 ₽</span>
                     <p>+2,5 месяца в подарок в первый год</p>
@@ -275,40 +293,40 @@
                         Выгода до 12 500 ₽
                     </span>
                 </div>
-                <div>
+                <div class="element-animation">
                     <h3>Месяц</h3>
                     <span>2 500 ₽</span>
                 </div>
             </div>
             <ul class="price__body-block-list">
-                <li>
+                <li class="element-animation">
                     300+ видеороликов
                 </li>
-                <li>
+                <li class="element-animation">
                     3 000+ заданий
                 </li>
-                <li>
+                <li class="element-animation">
                     Интерактивный личный кабинет <br> с прогрессом и оценкой знаний
                 </li>
-                <li>
+                <li class="element-animation">
                     Наставники, которые ответят <br> на вопросы за 5 минут
                 </li>
-                <li>
+                <li class="element-animation">
                     Выбор предметов
                 </li>
-                <li>
+                <li class="element-animation">
                     Круглосуточный доступ к платформе 
                 </li>
-                <li>
+                <li class="element-animation">
                     Челленджи и награды
                 </li>
             </ul>
         </div>
     </div>
     <svg class="arrow" width="252" height="251" viewBox="0 0 252 251" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20.6146 185.16C15.6101 178.012 8.47681 152.256 20.6141 134.171C35.7858 111.564 103.717 116.988 105.324 145.16C106.931 173.332 34.5989 100.872 72.3242 57.6602C92.8402 34.1602 175.824 1.16016 236.824 108.404" stroke="white" stroke-width="2"/>
-        <path d="M234.824 90.6602L237.324 109.66L218.824 98.6602" stroke="white" stroke-width="2"/>
-        </svg>
+        <path class="arrow-line" d="M20.6146 185.16C15.6101 178.012 8.47681 152.256 20.6141 134.171C35.7858 111.564 103.717 116.988 105.324 145.16C106.931 173.332 34.5989 100.872 72.3242 57.6602C92.8402 34.1602 175.824 1.16016 236.824 108.404" stroke="white" stroke-width="2"/>
+        <path class="arrow-head" d="M234.824 90.6602L237.324 109.66L218.824 98.6602" stroke="white" stroke-width="2"/>
+    </svg>
     <svg class="back" width="329" height="309" viewBox="0 0 329 309" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M19.3202 82.4544L0.5 206.667V311.167H329L229 247.167L279 171.167L198.5 196.667L247.128 0.946289L86 206.667L19.3202 82.4544Z" fill="#FDBCFF"/>
     </svg>        
@@ -325,9 +343,9 @@
 <section class="que">
     <div class="container">
         <div class="que__body">
-            <h2>Частые вопросы</h2>
+            <h2 class="element-animation">Частые вопросы</h2>
             <div class="que__body-items">
-                <div class="que__body-items-item">
+                <div class="que__body-items-item element-animation">
                     <div class="que__body-items-item-top">
                         <span>Можно ли заниматься с планшета?</span>
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -341,8 +359,8 @@
                         Porro officia libero maxime nemo! Officia magnam sit atque nisi eveniet explicabo veniam, temporibus eius facilis harum ab illo fugit totam quo rerum voluptates eum, adipisci minima odio, commodi mollitia!
                     </div>
                 </div>
-                <div class="line"></div>
-                <div class="que__body-items-item">
+                <div class="line element-animation"></div>
+                <div class="que__body-items-item element-animation">
                     <div class="que__body-items-item-top">
                         <span>Что, если программа не совпадает со школой?</span>
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -356,8 +374,8 @@
                         Porro officia libero maxime nemo! Officia magnam sit atque nisi eveniet explicabo veniam, temporibus eius facilis harum ab illo fugit totam quo rerum voluptates eum, adipisci minima odio, commodi mollitia!
                     </div>
                 </div>
-                <div class="line"></div>
-                <div class="que__body-items-item">
+                <div class="line element-animation"></div>
+                <div class="que__body-items-item element-animation">
                     <div class="que__body-items-item-top">
                         <span>Можно ли заниматься без интернета?</span>
 
@@ -372,8 +390,8 @@
                         Porro officia libero maxime nemo! Officia magnam sit atque nisi eveniet explicabo veniam, temporibus eius facilis harum ab illo fugit totam quo rerum voluptates eum, adipisci minima odio, commodi mollitia!
                     </div>
                 </div>
-                <div class="line"></div>
-                <div class="que__body-items-item">
+                <div class="line element-animation"></div>
+                <div class="que__body-items-item element-animation">
                     <div class="que__body-items-item-top">
                         <span>Можно ли выбрать только один предмет или нужно оплачивать всю программу?</span>
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -387,8 +405,8 @@
                         Porro officia libero maxime nemo! Officia magnam sit atque nisi eveniet explicabo veniam, temporibus eius facilis harum ab illo fugit totam quo rerum voluptates eum, adipisci minima odio, commodi mollitia!
                     </div>
                 </div>
-                <div class="line"></div>
-                <div class="que__body-items-item">
+                <div class="line element-animation"></div>
+                <div class="que__body-items-item element-animation">
                     <div class="que__body-items-item-top">
                         <span>Есть ли задания для подготовки к ОГЭ/ЕГЭ?</span>
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -34,19 +34,6 @@ if (document.querySelectorAll(".que__body-items-item")){
 }
 
 
-// $.fn.setCursorPosition = function(pos) {
-//     if ($(this).get(0).setSelectionRange) {
-//         $(this).get(0).setSelectionRange(pos, pos);
-//     } else if ($(this).get(0).createTextRange) {
-//         var range = $(this).get(0).createTextRange();
-//         range.collapse(true);
-//         range.moveEnd('character', pos);
-//         range.moveStart('character', pos);
-//         range.select();
-//     }
-// };
-
-
 
 
 $("input[type='tel']").mask("+7(999) 999-9999");
@@ -119,6 +106,27 @@ $('.good-btn').on('click', function(e){
         $('.auth').fadeOut(1000)
     },1000)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 var splide = new Splide( '.splide', {
