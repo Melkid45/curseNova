@@ -43,8 +43,38 @@
     height: 800px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     position: relative;
     align-items: center;
+    display: flex;
+    gap: 46px;
+    .glass{
+        width: 427px;
+        height: 427px;
+        position: absolute;
+        bottom: -36px;
+    }
+    .marshmaelow-one{
+        width: 112px;
+        height: 99px;
+        position: absolute;
+        bottom: 229px;
+        right: 423px;
+    }
+    .marshmaelow-two{
+        position: absolute;
+        width: 102px;
+        height: 106px;
+        bottom: 163px;
+        left: 417px;
+    }
+    .marshmaelow-three{
+        position: absolute;
+        bottom: 125px;
+        width: 73px;
+        height: 76px;
+        left: 489px;
+    }
     p{
         font-weight: 500;
         font-size: 48px;
@@ -125,86 +155,120 @@
                 display: flex;
                 align-items: flex-end;
                 padding: 72px 32px 32px 32px;
+                perspective: 1000px; /* Глубина 3D-эффекта */
                 p{
                     font-weight: 550;
                     font-size: 20px;
                     line-height: 24px;
                     letter-spacing: 0%;
                 }
+                .front {
+                    transform: rotateY(0deg);
+                }
+
+                .back {
+                    transform: rotateY(180deg);
+                }
             }
             &-item:nth-child(1){
-                background: linear-gradient(257.29deg, #FDBCFF 51.67%, #E38EE6 126.79%);
                 rotate: -3deg;
                 margin-right: 31.64px;
                 p{
                     color: #4B264D;
                 }
+                .front{
+                    background: linear-gradient(257.29deg, #FDBCFF 51.67%, #E38EE6 126.79%);
+                }
             }
             &-item:nth-child(2){
-                background: linear-gradient(63.88deg, #25252B 21.96%, #4B4B55 94.86%);
                 rotate: 5deg;
                 margin-right: 22px;
                 p{
                     color: #fff;
                 }
+                .front{
+                background: linear-gradient(63.88deg, #25252B 21.96%, #4B4B55 94.86%);
+
+                }
             }
             &-item:nth-child(3){
-                background: var(--Lime-100, #CDFE9C);
                 rotate: -5deg;
                 p{
                     color: #2A4311;
                 }
+                .front{
+                background: var(--Lime-100, #CDFE9C);
+
+                }
             }
             &-item:nth-child(4){
-                background: #DCDCF2;
                 rotate: 2deg;
                 margin-right: 34px;
                 margin-top: 24px;
                 p{
                     color: #14141A;
                 }
+                .front{
+                background: #DCDCF2;
+
+                }
             }
             &-item:nth-child(5){
-                background: #BBADFF;
                 rotate: -3deg;
                 margin-right: 34px;
                 margin-top: 19px;
                 p{
                     color: #0E0056;
                 }
+                .front{
+                background: #BBADFF;
+
+                }
             }
             &-item:nth-child(6){
-                background: linear-gradient(257.29deg, #FDBCFF 51.67%, #E38EE6 126.79%);
                 rotate: 6deg;
                 margin-top: 24px;
                 p{
                     color: #4B264D;
                 }
+                .front{
+                background: linear-gradient(257.29deg, #FDBCFF 51.67%, #E38EE6 126.79%);
+
+                }
             }
             &-item:nth-child(7){
-                background: linear-gradient(63.88deg, #25252B 21.96%, #4B4B55 94.86%);
                 rotate: -5deg;
                 margin-top: 4px;
                 margin-right: 31px;
                 p{
                     color: #fff;
                 }
+                .front{
+                background: linear-gradient(63.88deg, #25252B 21.96%, #4B4B55 94.86%);
+
+                }
             }
             &-item:nth-child(8){
-                background: #CDFE9C;
                 rotate: 7deg;
                 margin-top: 39px;
                 margin-right: 28.5px;
                 p{
                     color: #2A4311;
                 }
+                .front{
+                background: #CDFE9C;
+
+                }
             }
             &-item:nth-child(9){
-                background: #DCDCF2;
                 rotate: -3deg;
                 margin-top: 25px;
                 p{
                     color: #14141A;
+                }
+                .front{
+                background: #DCDCF2;
+
                 }
             }
         }
@@ -399,3 +463,68 @@
         backdrop-filter: blur(48px)
     }
 }
+
+.card-face.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    top: 0;
+    left: 0;
+    padding: 32px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 24px;
+}
+
+.card-face.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    border-radius: 24px;
+    box-shadow: 0px 4px 22px -5px #14141A;
+    background: #25252B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--Grayscale-600, #4B4B55);
+    top: 0;
+    left: 0;
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 295px;
+        .title{
+            font-weight: 550;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0%;
+            color: #fff;
+        }
+        .desc{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 2%;
+            color: #9999AA;
+        }
+    }
+}
+
+
+
+/* Эффект переворота при добавлении класса .flipped */
+.quiz__body-card-item.flipped .front {
+    transform: rotateY(-180deg);
+}
+
+.quiz__body-card-item.flipped .back {
+    transform: rotateY(0deg);
+}
+
+/* Стили для текста на обратной стороне */

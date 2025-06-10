@@ -290,7 +290,7 @@ $(function () {
         video.currentTime = video.duration * e.progress;
       })
       .addTo(controller)
-      .addIndicators({ name: "Video Scroll" });
+      // .addIndicators({ name: "Video Scroll" });
   }
 
   // Инициализация анимации видео
@@ -375,3 +375,150 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+  // Инициализация контроллера ScrollMagic
+  const controller = new ScrollMagic.Controller();
+
+  // Фиксируем секцию на время прокрутки
+  const platformScene = new ScrollMagic.Scene({
+    triggerElement: '.platform',
+    triggerHook: 0,
+    duration: '200%' // На сколько пикселей закреплять
+  })
+  .setPin('.platform')
+  .addTo(controller);
+
+  // Анимация изменения цвета текста (по буквам)
+  const textElements = document.querySelectorAll('.platform p');
+  
+  textElements.forEach((p) => {
+    // Разбиваем текст на буквы (для GSAP)
+    const text = p.textContent;
+    p.textContent = '';
+    
+    for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.textContent = text[i];
+      span.style.color = 'gray'; // Начальный цвет
+      p.appendChild(span);
+    }
+    gsap.fromTo(textElements, 
+      {y: 100},
+      {
+        y: -200,
+        scrollTrigger: {
+          trigger: '.platform',
+          start: 'top 80%',
+          end: 'bottom 20%',
+          scrub: true // Плавная анимация при скролле
+        }
+      }
+    )
+    // Анимация изменения цвета
+    gsap.to(p.querySelectorAll('span'), 
+    {
+      color: 'white',
+      stagger: 0.05, // Задержка между буквами
+      scrollTrigger: {
+        trigger: p,
+        start: 'top 80%',
+        end: 'bottom 20%',
+        scrub: true // Плавная анимация при скролле
+      }
+    });
+  });
+
+  // Появление стакана и зефирок с opacity: 0 → 1
+  const glass = document.querySelector('.glass');
+  const marshmallows = [
+    document.querySelector('.marshmaelow-one'),
+    document.querySelector('.marshmaelow-two'),
+    document.querySelector('.marshmaelow-three')
+  ];
+
+  gsap.fromTo(glass, 
+    { opacity: 0, y: 50 },
+    { 
+      opacity: 1, 
+      y: 0,
+      scrollTrigger: {
+        trigger: '.platform',
+        start: 'bottom bottom',
+        end: 'bottom 30%',
+        scrub: true
+      }
+    }
+  );
+
+  // Поочередное появление зефирок
+  marshmallows.forEach((marsh, index) => {
+    gsap.fromTo(marsh,
+      { opacity: 0, y: 20 },
+      {
+        opacity: 1,
+        y: 0,
+        delay: index * 0.3, // Задержка между элементами
+        scrollTrigger: {
+          trigger: '.platform',
+          start: 'bottom bottom',
+          end: 'bottom -10%',
+          scrub: true
+        }
+      }
+    );
+  });
+});
+
+$('.quiz__body-card-item').on('click', function(e){
+  $(this).addClass('flipped')
+  $('.quiz__body-card-item').not(this).removeClass('flepped')
+})
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Инициализация контроллера ScrollMagic
+  const controller = new ScrollMagic.Controller();
+
+  // Фиксируем секцию на время прокрутки
+  const platformScene = new ScrollMagic.Scene({
+    triggerElement: '.understand',
+    triggerHook: 0,
+    duration: '200%' // На сколько пикселей закреплять
+  })
+  // .setPin('.understand')
+  .addTo(controller);
+
+  // Анимация изменения цвета текста (по буквам)
+  const textElements = document.querySelectorAll('.understand p');
+  
+  textElements.forEach((p) => {
+    // Разбиваем текст на буквы (для GSAP)
+    const text = p.textContent;
+    p.textContent = '';
+    
+    for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.textContent = text[i];
+      span.style.color = 'gray'; // Начальный цвет
+      p.appendChild(span);
+    }
+    // Анимация изменения цвета
+    gsap.to(p.querySelectorAll('span'), 
+    {
+      color: 'white',
+      stagger: 0.05, // Задержка между буквами
+      scrollTrigger: {
+        trigger: p,
+        start: 'top 80%',
+        end: 'bottom 20%',
+        scrub: true // Плавная анимация при скролле
+      }
+    });
+  });
+});
