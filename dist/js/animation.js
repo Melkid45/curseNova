@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
       end: "+=2000",
       pin: true,
       scrub: 1,
-      markers: true,
       snap: {
         snapTo: [0, 0.33, 0.66, 1], // Четкие точки притягивания
         duration: { min: 0.2, max: 0.6 },
