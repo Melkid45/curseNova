@@ -52,49 +52,6 @@ $(function () {
     .addTo(controller);
 });
 
-// $(function () { // wait for document ready
-//     // init
-//     var controller = new ScrollMagic.Controller();
-
-//     // define movement of panels
-//     var wipeAnimation = new TimelineMax()
-//         .fromTo(".btn-1", 1, {y: '0%'}, {y: '-100%', opacity: 0, ease: Linear.easeNone}, 0)  // in from left
-//         .fromTo(".btn-2", 1, {y: '0%'}, {scale: '1', top: 0, ease: Linear.easeNone}, 0)  // in from left
-//         .fromTo(".btn-3", 1, {y: '0%'}, {scale: '0.8', top: '24rem', ease: Linear.easeNone}, 0)  // in from left
-//         .fromTo(".btn-2", 1, {y: '0%'}, {y: '-100%', opacity: 0, ease: Linear.easeNone}, 1)  // in from left
-//         .fromTo(".btn-3", 1, {y: '0%'}, {scale: '1', top: 0, ease: Linear.easeNone}, 1)  // in from left
-
-//         //images
-
-//         .fromTo(".img-1", 1, {y: '0%'}, {y: '-10%', x: '-10%', opacity: 0, ease: Linear.easeNone}, 0)
-//         .fromTo(".img-2", 1, {y: '0%'}, {y: '-10%', x: '10%', opacity: 0, ease: Linear.easeNone}, 0)
-//         .fromTo(".img-3", 1, {y: '0%'}, {y: '10%', x: '-10%', opacity: 0, ease: Linear.easeNone}, 0)
-//         .fromTo(".img-4", 1, {y: '0%'}, {y: '10%', x: '10%', opacity: 0, ease: Linear.easeNone}, 0)
-
-//         .fromTo(".img-5", 1, {y: '-10%', x: '-10%',}, {y: '0%', x: '0%', opacity: 1, ease: Linear.easeNone}, 1)
-//         .fromTo(".img-6", 1, {y: '-10%', x: '10%'}, {y: '0%', x: '0%', opacity: 1, ease: Linear.easeNone}, 1)
-//         .fromTo(".img-7", 1, {y: '10%', x: '-10%'}, {y: '0%', x: '0%', opacity: 1, ease: Linear.easeNone}, 1)
-//         .fromTo(".img-8", 1, {y: '10%', x: '10%'}, {y: '0%', x: '0%', opacity: 1, ease: Linear.easeNone}, 1)
-
-//         .fromTo(".img-5", 1, {y: '0%'}, {y: '-10%', x: '-10%', opacity: 0, ease: Linear.easeNone}, 2)
-//         .fromTo(".img-6", 1, {y: '0%'}, {y: '-10%', x: '10%', opacity: 0, ease: Linear.easeNone}, 2)
-//         .fromTo(".img-7", 1, {y: '0%'}, {y: '10%', x: '-10%', opacity: 0, ease: Linear.easeNone}, 2)
-//         .fromTo(".img-8", 1, {y: '0%'}, {y: '10%', x: '10%', opacity: 0, ease: Linear.easeNone}, 2)
-//         .fromTo(".img-9", 1, {y: '-10%', x: '-10%',}, {y: '0%', x: '0%', opacity: 1, ease: Linear.easeNone}, 3)
-//         .fromTo(".img-10", 1, {y: '-10%', x: '10%'}, {y: '0%', x: '0%', opacity: 1, ease: Linear.easeNone}, 3)
-//         .fromTo(".img-11", 1, {y: '10%', x: '-10%'}, {y: '0%', x: '0%', opacity: 1, ease: Linear.easeNone}, 3)
-//         .fromTo(".img-12", 1, {y: '10%', x: '10%'}, {y: '0%', x: '0%', opacity: 1, ease: Linear.easeNone}, 3)
-//     // create scene to pin and link animation
-//     new ScrollMagic.Scene({
-//             triggerElement: ".support",
-//             triggerHook: "onLeave",
-//             duration: "100%"
-//         })
-//         .setPin(".support")
-//         .addIndicators()
-//         .setTween(wipeAnimation)
-//         .addTo(controller);
-// });
 
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -107,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       end: "+=2000",
       pin: true,
       scrub: 1,
+      markers: true,
       snap: {
         snapTo: [0, 0.33, 0.66, 1], // Четкие точки притягивания
         duration: { min: 0.2, max: 0.6 },
